@@ -6,6 +6,7 @@ terraform {
     }
   }
   cloud {
+    organization = "kazuesandbox"
     workspaces {
       name = "learn-terraform-dynamic-credentials"
     }
