@@ -27,3 +27,8 @@ resource "aws_instance" "web" {
 
   tags = var.tags
 }
+
+resource "aws_instance" "test" {
+  ami           = data.aws_ami.amazon_linux.id
+  instance_type = var.instance_type
+}
